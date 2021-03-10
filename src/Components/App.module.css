@@ -1,30 +1,49 @@
-.imgPlay{
-    width: 50px;
-    height: 50px;
+.imgRemove {
+    width: 30px;
+    height: 30px;
+    margin: 0 5px;
 }
 
-.btnPlay,
-.inputPlay
-{
+.btn {
     border: none;
     background: none;
 }
 
-.btnPlay:focus,
-.inputPlay:focus
-{
+.btn:focus {
     outline: none;
 }
-.inputPlay
-{
+
+.timerGrup {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+.imgPlay {
+    width: 50px;
+    height: 50px;
+}
+
+.btnPlay, .inputPlay {
+    border: none;
+    background: none;
+}
+
+.btnPlay:focus, .inputPlay:focus {
+    outline: none;
+}
+
+.inputPlay {
     font-size: 20px;
     padding: 0 10px;
     width: 200px;
     height: 50px;
 }
-.divPlay{
+
+.divPlay {
     height: 54px;
-    width:  260px;
+    width: 260px;
     border: 1px solid black;
     display: flex;
     border-radius: 27px;

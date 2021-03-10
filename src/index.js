@@ -3,16 +3,20 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './Components/App';
 import reportWebVitals from './reportWebVitals';
+import { Provider } from 'react-redux';
+import store from './redux/store';
+
 
 ReactDOM.render(
   <React.StrictMode>
-    <div className='container'>
-      <h1>Tracker</h1>
-      <App />
-    </div>
+    <Provider store={store}>
 
-  </React.StrictMode>,
-  document.getElementById('root')
+        <div className='container'>
+          <h1>Tracker</h1>
+          <App />
+        </div>
+    </Provider>
+  </React.StrictMode>, document.getElementById('root')
 );
 
 // If you want to start measuring performance in your app, pass a function
