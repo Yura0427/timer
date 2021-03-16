@@ -3,7 +3,15 @@ const GET_TRACKERS = "GET_TRACKERS";
 
 let initialState = {
     name: '',
-    trackers: []
+    trackers: [{
+        currentTime: 104897,
+        startAt: 1615826623738,
+        trackName: ""
+    }, {
+        startAt: 1615826623738,
+        timeStart: 1615828083523,
+        trackName: ""
+    }]
 }
 
 const reducer = (state = initialState, action) => {
@@ -22,13 +30,6 @@ export const setName = (name) => ({
     type: SET_NAME,
     payload: { name }
 })
-// export const getTrackers = () => {
-//     let arr = []
-//     for (let i = 0; i < localStorage.length; i++) {
-//         arr.push({ id: i })
-//     }
-//     setTrackers(arr.reverse())
-// }
 
 
 export default reducer
